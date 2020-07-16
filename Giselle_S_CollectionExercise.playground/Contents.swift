@@ -5,7 +5,7 @@ import UIKit
 print("I started my collection when I was very little. My parents made sure my room was Tinkerbell Themed.\n")
 
 
-var tinkerbell : [String] = ["1. Tinkerbell bedsheets", "2. Tinkerbell Lamp", "3. Tinkerbell Pillow"]
+var tinkerbell : [String] = [" Tinkerbell Bedsheets", " Tinkerbell Lamp", " Tinkerbell Pillow"]
 print ("My tinkerbell collection backthen contained \(tinkerbell.count) items. They are:")
 
 for item in tinkerbell {
@@ -13,16 +13,17 @@ for item in tinkerbell {
 }
 
 
-tinkerbell.append("4. Tinkerbell earrings")
+tinkerbell.append(" Tinkerbell Earrings")
 
 //tinkerbell += ["Tinkerbell ear rings"]
-tinkerbell += ["5.Tinkerbell coin jar"]
-tinkerbell += ["6. Tinkerbell Cast figures"]
-tinkerbell.append("7. Tinkerbell t-Shirts ")
-tinkerbell.append("8. Tinkerbell keychain")
-tinkerbell.append("9. Tinkerbell posters")
-tinkerbell += ["10. Tinkerbell necklace"]
-tinkerbell += ["11. Tinkerbell picture frame"]
+tinkerbell += [" Tinkerbell Cast figures"]
+tinkerbell.append(" Tinkerbell T-Shirts ")
+tinkerbell.append(" Tinkerbell Keychain")
+tinkerbell.append(" Tinkerbell Posters")
+tinkerbell += [" Tinkerbell Necklace"]
+tinkerbell += [" Tinkerbell Picture frame"]
+// tinkerbell += ["Tinkerbell Mug"]
+
 
 if tinkerbell.isEmpty {
     print("The collection is empty.")
@@ -41,3 +42,7 @@ if tinkerbell.isEmpty {
 } else {
     print("The collection will never be empty. \n")
 }
+
+print("In alpabetical order the list looks like this: \n ")
+tinkerbell.sort(by: <)
+print(tinkerbell)
